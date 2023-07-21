@@ -1,0 +1,169 @@
+
+body {
+  font-family: 'Barlow', serif;
+}
+
+header {
+  background: linear-gradient(to bottom, #800000, #FFF);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 56px;
+  margin-top: 10px;
+  color: #800000;
+  font-family: 'Rajdhani', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #333;
+  margin-bottom: 70px;
+}
+
+.contact-link {
+  font-size: 18px;
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.connect-svg {
+  max-width: 30px;
+  height: auto;
+}
+
+/* Menu  */
+
+  .navbar {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-link {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .nav-link:hover {
+    color: #800000;
+  }
+  
+  
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  
+  .navbar-toggler:focus {
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    width: 25px;
+    height: 17px;
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23333" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .custom-nav {
+    background: linear-gradient(to bottom, #800000, #fff);
+  }
+  
+  .custom-nav .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-nav .nav-link {
+    font-size: 18px;
+  }
+  
+
+ 
+/* Pour la partie des messages */
+.card-body {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 25px;
+  background-color:#800000;
+  margin-bottom: 10px;
+  color: white;
+  border: 2px solid #800000;
+  padding: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  border-radius:0px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.delete-form {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-danger {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-danger:hover {
+  background-color: #700000;
+}
+
+.btn-danger:focus {
+  outline: none;
+}
+
+  
+/* Version mobile */
+@media (max-width: 767px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    box-shadow: none;
+    margin-bottom: 10px;
+  }
+}
+
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  

@@ -1,0 +1,39 @@
+body {
+    font-family: 'Barlow', serif;
+    
+    
+  }
+
+  .container {
+    max-width: 1000px;
+  }
+
+  /* Styles de l'en-tête */
+header {
+    background: linear-gradient(to bottom, #800000, #FFF);
+    padding: 20px;
+    margin-bottom: 10px;
+    font-family: 'Rajdhani', sans-serif;
+   
+    width: 100%;
+    
+  
+  }
+
+
+  .title {
+    font-size: 28px;
+    color: #FFF;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .btn-primary {
+    background-color: #800000;
+    border-color: #800000;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #FF0000;
+    border-color: #FF0000;
+  }

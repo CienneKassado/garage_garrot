@@ -1,0 +1,235 @@
+body {
+  font-family: 'Barlow', serif;
+  margin-top: 250px;
+}
+
+h2 {
+  font-family: 'Rajdhani', serif;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to bottom, #800000, #FFF);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.modal {
+  z-index: 9999;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 28px;
+  color: #FFF;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.contact-link {
+  font-size: 18px;
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.connect-svg {
+  max-width: 30px;
+  height: auto;
+}
+
+/* Affichage des voitures */
+.car-block {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.car-block:hover {
+  transform: translateY(-5px);
+}
+
+.car-block img {
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.car-info {
+  margin-top: 20px;
+}
+
+.car-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.car-price {
+  font-size: 18px;
+  color: #800000;
+}
+
+/* Modals */
+.modal-content {
+  border-radius: 5px;
+}
+
+.modal-body p {
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  justify-content: flex-start;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #800000;
+  color: white;
+}
+
+/* Le dropdown */
+.dropdown-menu a {
+  color: #333;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.dropdown-menu a.dropdown-item:first-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu a.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* "Nous contacter" */
+.dropdown-menu a.contact-link {
+  color: #800000;
+  font-weight: bold;
+}
+
+.dropdown-menu a.contact-link:hover {
+  color: #800000;
+}
+
+/* Version mobile*/
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
+
+  body {
+    margin-top: 500px;
+  }
+}
+
+
+@media (max-width: 368px) {
+  header {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
+
+  body {
+    margin-top: 1000px;
+  }
+}
+
+/* Formulaire et Boutons */
+.container {
+  padding: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #800000;
+  border-color: #800000;
+}
+
+.btn-primary:hover {
+  background-color: #80000067;
+  border-color: #80000067;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+  border-color: #545b62;
+}
+
+.filter-form {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-form input[type="number"] {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.filter-form input[type="number"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.filter-form button[type="submit"],
+.filter-form a.btn-secondary {
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+
+/* Footer*/
+footer {
+  background-color: #800000;
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 18px;
+}

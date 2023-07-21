@@ -1,0 +1,103 @@
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: white;
+  
+}
+
+/* Header */
+header {
+  background: linear-gradient(to bottom, #800000, white);
+  color: #fff;
+  max-height: 300px;
+  
+}
+
+.title {
+  font-size: 96px;
+  margin-top: 35px;
+}
+
+.logo {
+  max-width: 120px;
+  margin-top: 7px;
+}
+
+/* Formulaire */
+.form-row {
+  margin-bottom: 0px;
+  margin-top: 100px;
+}
+
+.container {
+  max-width: 2000px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  border-color: #ddd;
+}
+
+.btn-primary {
+  background-color: #800000;
+  border-color: #800000;
+}
+
+.btn-primary:hover {
+  background-color: #D94350;
+  border-color: #D94350;
+}
+
+.alert {
+  margin-top: 20px;
+  background-color: #FFD2D2;
+  border-color: #FFA5A5;
+  color: #800000;
+}
+
+.custom-nav {
+  background: linear-gradient(to bottom, #800000, white);
+  padding: 10px 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #800000;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  width: 25px;
+  height: 17px;
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23333" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

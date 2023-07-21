@@ -1,0 +1,384 @@
+
+body {
+  font-family: 'Barlow', serif;
+  margin-top: 250px;
+  max-width: 100%;
+  overflow-x: hidden; 
+}
+
+
+/* Les boutons primary */
+.btn-primary {
+  background-color: #800000;
+  border-color: #800000;
+}
+
+.btn-primary:hover {
+  background-color: #D94350;
+  border-color: #D94350;
+}
+
+
+/* Le formulaire */
+.formulaire {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulaire h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.formulaire .form-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.formulaire .form-control {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.formulaire textarea.form-control {
+  resize: vertical;
+}
+
+.formulaire button[type="submit"] {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.formulaire button[type="submit"]:hover {
+  background-color: #D94350;
+}
+
+
+
+/* Le header */
+header {
+  background: linear-gradient(to bottom, #800000, #FFF);
+  padding: 20px;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.title {
+  font-size: 76px;
+  color: #FFF;
+  font-family: 'Rajdhani', sans-serif;
+  margin-top: 10px;
+}
+/* La page */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
+/* Les horaires d'ouverture */
+.horaire-ouverture {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.horaire-ouverture h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.horaire-ouverture ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horaire-ouverture li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.horaire-ouverture label {
+  font-weight: bold;
+  color: #555;
+  flex: 1;
+}
+
+.horaire-ouverture input[type="time"] {
+  flex: 2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.horaire-ouverture button[type="submit"] {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.horaire-ouverture button[type="submit"]:hover {
+  background-color: #D94350;
+}
+
+.horaire-ouverture form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horaire-ouverture button[type="submit"] {
+  margin-top: 15px;
+}
+
+
+
+/*  "À propos de nous" */
+.a-propos {
+  background-color: #f8f9fa;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.a-propos h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.a-propos img {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.a-propos p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.a-propos img {
+  transition: transform 0.3s ease;
+}
+
+.a-propos img:hover {
+  transform: scale(1.05);
+}
+
+/* Le menu déroulant */
+.dropdown-menu a {
+  color: #333;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.dropdown-menu a.dropdown-item:first-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu a.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a.contact-link {
+  color: #800000;
+  font-weight: bold;
+}
+
+.dropdown-menu a.contact-link:hover {
+  color: #800000;
+}
+
+/* Le formulaires */
+.row.formulaire {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.row.formulaire h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.row.formulaire .form-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.row.formulaire .form-control {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.row.formulaire textarea.form-control {
+  resize: vertical;
+}
+
+.row.formulaire button[type="submit"] {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.row.formulaire button[type="submit"]:hover {
+  background-color: #D94350;
+}
+
+/* Les commentaires */
+.commentaires {
+  margin-top: 20px;
+}
+
+.carousel-item .commentaires-groupe {
+  margin-bottom: 20px;
+}
+
+.commentaire {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 0px;
+  box-shadow: 0 2px 4px black;
+  margin-bottom: 10px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+
+
+.commentaire .row {
+  margin-bottom: 5px;
+}
+
+.commentaire h4 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.commentaire p {
+  margin: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 15px;
+  height: 15px;
+}
+
+/* Le Footer */
+footer {
+  background-color: #800000;
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+h4,h1,h2,h3 {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+
+.modal {
+  z-index: 9999;
+}
+
+
+
+/* Version mobile */
+@media (max-width: 768px) {
+
+
+  header {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
+
+  body {
+    margin-top: 500px;
+    overflow-x: hidden;
+  }
+
+  
+  .horaire-ouverture,
+  .contact-info,
+  .a-propos,
+  .row.formulaire {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 368px) {
+  header {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
+
+  body {
+    margin-top: 1000px;
+  }
+}
