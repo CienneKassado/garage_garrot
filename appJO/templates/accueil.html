@@ -1,0 +1,267 @@
+{% load static %}
+{% include 'modals.html' %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jeux Olympiques 2024</title>
+    <link rel="icon" href="{% static 'images/logo_jo.svg' %}" type="image/svg+xml">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+   
+</head>
+
+<body>
+
+    <header class="hero is-primary is-bold text-white" style="background-image: url('{% static 'images/header.jpg' %}'); background-size: cover; background-position: center;">
+        <div class="hero-body">
+            <div class="container text-center">
+                <div class="mt-5">
+                    <h1 class="display-3">Jeux Olympiques 2024</h1>
+                    <p class="lead">Bienvenue sur le site officiel des Jeux Olympiques en France. Réservez vos e-tickets dès maintenant pour vivre l'événement sportif de l'année !</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <nav class="navbar navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Rubrique 1</a>
+                    </nav>
+                </div>
+
+                <div class="col-md-4">
+                    <nav class="navbar">
+                        <img src="{% static 'images/logo_jo.svg' %}" alt="Logo" class="footer-logo" style="max-width: 200px;">
+                    </nav>
+                </div>
+
+                <div class="col-md-4">
+                    <nav class="navbar navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Rubrique 2</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="container mt-5">
+   
+    <p class="description">Les Jeux Olympiques 2024 seront l'événement sportif le plus grandiose de l'année, réunissant les athlètes du monde entier dans une compétition exceptionnelle. Explorez les différentes épreuves et vivez l'excitation des performances extraordinaires.</p>
+    <h1 class="display-6 titres">Athlétisme</h1>
+
+    <div id="eventCarousel" class="carousel slide" data-ride="carousel">
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <div class="card is-clickable" data-toggle="modal" data-target="#eventModal1">
+                                <img src="{% static 'images/courses.jpg' %}" class="card-img-top" alt="Event Image 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Courses</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <div class="card is-clickable" data-toggle="modal" data-target="#eventModal2">
+                                <img src="{% static 'images/sauts.jpg' %}" class="card-img-top" alt="Event Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sauts</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <div class="card is-clickable" data-toggle="modal" data-target="#eventModal3">
+                                <img src="{% static 'images/lancets.jpg' %}" class="card-img-top" alt="Event Image 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lancets</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+        <a class="carousel-control-prev" href="#eventCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        
+        <a class="carousel-control-next" href="#eventCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <h1 class="display-6 titres">Sports Aquatiques</h1>
+    <div id="secondEventCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <div class="card is-clickable" data-toggle="modal" data-target="#eventModal4">
+                                <img src="{% static 'images/natation.jpg' %}" class="card-img-top" alt="Event Image 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Natation</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <div class="card is-clickable" data-toggle="modal" data-target="#eventModal5">
+                                <img src="{% static 'images/synchro.jpg' %}" class="card-img-top" alt="Event Image5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Natation Synchronisée</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <div class="card is-clickable" data-toggle="modal" data-target="#eventModal6">
+                                <img src="{% static 'images/water.jpg' %}" class="card-img-top" alt="Event Image6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Water-Polo</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <a class="carousel-control-prev" href="#secondEventCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#secondEventCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <h1 class="display-6 titres">Sports de Compétitions</h1>
+
+    <div id="thirdEventCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <div class="card is-clickable" data-toggle="modal" data-target="#eventModal7">
+                                <img src="{% static 'images/gym.jpg' %}" class="card-img-top" alt="Event Image 7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gymnastique (artistique et rythmique)</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <div class="card is-clickable" data-toggle="modal" data-target="#eventModal8">
+                                <img src="{% static 'images/combat.jpg' %}" class="card-img-top" alt="Event Image 8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sports de combat (Judo, Boxe, Lutte)</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <div class="card is-clickable" data-toggle="modal" data-target="#eventModal9">
+                                <img src="{% static 'images/equipe.jpg' %}" class="card-img-top" alt="Event Image 9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sports d'équipe (Football, Basketball, Volley-ball)</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#thirdEventCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#thirdEventCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+{% include 'footer.html' %}
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script defer src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
